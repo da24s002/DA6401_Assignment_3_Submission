@@ -6,8 +6,13 @@ Implementation of a Sequencee to Sequence models with encoder, decoder architect
 In order to run the model you can run the following command :
 
 runs with the best arguments found while experimenting with the Daskshina Dataset<br>
-## python train.py 
+## python train_and_visualize.py
 
+<br>
+for question1 I have created a separate file from the train_and_visualize.py, named as question1.py, which just implements the basic functionalities.
+
+<br>
+set proper flags from command line arguments to enable or disable visualizations <br>
 arguments supported :
 
 | Name | Default Value | Description |
@@ -119,9 +124,9 @@ _________________<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;dakshina_dataset_v1.0<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;dakshina_dataset_v1.0<br>
 &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;|&nbsp;&nbsp;hi<br>
-|.<br>
-|.<br>
-|.<br>
+.<br>
+.<br>
+.<br>
 _________________ <br>
 The train_visualize.py file is the file containing the main method, and is the entry point to the training where we can pass our hyper-params<br>
 via command line arguments. <br>
@@ -130,6 +135,7 @@ Seq2SeqRNN.py and Seq2SeqAttention.py contains the model definition which is bei
 best_attention_hi_model.pt is the best model I have found using hyper-param tuning, this can be loaded with model.py<br>
 and inferences can be made on any data without training.<br>
 All the code for visualization of heatmap and other visualizations like confusion matrices can be found in the VisualizationUtils.py<br>
+All the visualization images can be found in the visualizations folder<br>
 ================== <br>
 
 <br>
